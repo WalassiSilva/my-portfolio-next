@@ -2,6 +2,7 @@
 import { Footer } from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import RecentProjects from "@/components/Recenteprojects";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </div>
       <Hero />
       <Grid />
+      <RecentProjects />
 
       <Footer />
     </main>

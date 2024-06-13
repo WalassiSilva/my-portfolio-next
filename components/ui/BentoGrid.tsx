@@ -344,7 +344,7 @@ export const BentoGridItem = ({
           )} */}
 
           {id === 4 && (
-            <>
+            <div className="flex flex-col gap-4 mt-4 md:gap-0 md:mt-0">
               <form
                 method="get"
                 action="/walassi_silva_cv_en.pdf"
@@ -371,7 +371,7 @@ export const BentoGridItem = ({
                   handleClick={handleCopy}
                 />
               </form>
-            </>
+            </div>
           )}
 
           {id === 6 && (
