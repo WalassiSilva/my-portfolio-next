@@ -9,12 +9,12 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Who is Walassi?",
+    title: "",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] h-full",
     imgClassName: "w-full h-full",
     titleClassName: "justify-start ",
-    // img: "/b1.svg",
+    // img: "/grid.svg",
     spareImg: "",
   },
   {
@@ -33,13 +33,13 @@ export const gridItems = [
     // description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
-    titleClassName: "justify-center",
+    titleClassName: "justify-start",
     img: "",
     spareImg: "",
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Take a look at my Curriculum",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -50,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Learning the power to do anything, anywhere, from anyplace",
+    title: "Learning the power to do anything, to anywhere, from anyplace",
     // description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -206,13 +206,22 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/walassisilva"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    link:"https://linkedin.com/in/walassi-silva"
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/email-alt.svg",
+    link:"mailto:walassi.b@gmail.com"
   },
+  {
+    id:4,
+    img: "/whatsapp.svg",
+    link:"https://wa.me/+5531986482092", 
+
+  }
 ];

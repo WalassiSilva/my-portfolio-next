@@ -26,6 +26,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import SocialMedias from "../SocialMedias";
 
 export const BentoGrid = ({
   className,
@@ -72,6 +73,8 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
+  const handleEnglishCv = () => {};
+
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
@@ -80,7 +83,6 @@ export const BentoGridItem = ({
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  // TODO
   const frontendSkills = [
     {
       id: "react",
@@ -187,6 +189,62 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+        {id === 1 && (
+          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ">
+            {title}
+          </div>
+        )}
+        <div className="">
+          {id === 1 && (
+            <div className="p-10 flex flex-col justify-center items-center gap-4 ">
+              <h1 className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ">
+                Who is <span className="text-purple">Walassi</span>?
+              </h1>
+              <div className="flex flex-col gap-10 items-center">
+                <p>
+                  My name is <span className="text-purple"> Walassi</span>. I am
+                  an extremely <span className="text-purple">dedicated</span>{" "}
+                  and
+                  <span className="text-purple"> committed</span> individual
+                  when it comes to work.
+                </p>
+                <p>
+                  I have been enhancing my knowledge in the area of front-end
+                  web development, utilizing technologies such as{" "}
+                  <span className="text-purple">
+                    HTML, CSS, JavaScript, TypeScript, React, Tailwind, Styled
+                    Components, SASS, Git/GitHub, Node.js, SQL, PostgreSQL,
+                    Prisma ORM, Jest, and Express.
+                  </span>
+                </p>
+                <p>
+                  I am currently transitioning from a different field, having
+                  spent <span className="text-purple"> five years</span> working
+                  in an tapestry business. During this time, I gained a wealth
+                  of <span className="text-purple">real-world knowledge</span>{" "}
+                  that is not taught in classrooms, such as{" "}
+                  <span className="text-purple">reacting quickly </span>
+                  to unforeseen events,{" "}
+                  <span className="text-purple">
+                    handling clients during stressful situations
+                  </span>
+                  , and reallocating team members and priorities when necessary.
+                </p>
+                <p>
+                  My clear objective is to become a{" "}
+                  <span className="text-purple">high quality developer</span>. I
+                  aspire to be a professional capable of{" "}
+                  <span className="text-purple">
+                    creating and contributing to projects
+                  </span>{" "}
+                  that bring about changes in people&apos;s lives, projects that
+                  facilitate, improve, and help users, clients, and all other
+                  stakeholders.
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
 
         <div
           className={`absolute right-0 -bottom-5 ${
@@ -214,18 +272,20 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className=" font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
-            {description}
-          </div>
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ">
             {title}
+          </div>
+          <div className=" font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+            {description}
           </div>
 
           {id === 5 && <GridGlobe />}
 
           {id === 2 && (
-            <div className="flex lg:mt-10 gap-1 lg:gap-5 w-fit -right-3 lg:-right-2">
-              <div className="flex flex-wrap gap-3 md:gap-5 lg:gap-8">
+            // <div className="flex lg:mt-10 gap-1 lg:gap-5 w-fit -right-3 lg:-right-2">
+            // <div className="flex flex-wrap gap-5  lg:gap-8">
+            <div className="">
+              <div className="grid grid-cols-3 md:grid-cols-4 gap-y-5 mt-10 p-10 ">
                 {frontendSkills.map((skill) => (
                   <div
                     key={skill.id}
@@ -233,7 +293,7 @@ export const BentoGridItem = ({
                       `relative flex items-center flex-col gap-1 text-xs opacity-100 text-center ${skill.color}`
                     )}
                   >
-                    <span className="*:size-10 md:*:size-12 lg:*:size-16 rounded-lg p-2 bg-[#10132e]">
+                    <span className="*:size-10 rounded-lg p-2 bg-[#10132e]">
                       {skill.icon}
                     </span>
                     <span>{skill.name}</span>
@@ -243,8 +303,8 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 3 && (
-            <div className="flex lg:mt-10 gap-1 lg:gap-5 w-fit -right-3 lg:-right-2">
-              <div className="flex flex-wrap gap-3 md:gap-5 lg:gap-8">
+            <div className="">
+              <div className="grid grid-cols-3 md:grid-cols-4 gap-y-3 mt-4">
                 {backendSkills.map((skill) => (
                   <div
                     key={skill.id}
@@ -252,7 +312,7 @@ export const BentoGridItem = ({
                       `relative flex items-center flex-col gap-1 text-xs opacity-100 text-center ${skill.color}`
                     )}
                   >
-                    <span className="*:size-10 md:*:size-12 lg:*:size-16 rounded-lg p-2 bg-[#10132e]">
+                    <span className="*:size-10 rounded-lg p-2 bg-[#10132e]">
                       {skill.icon}
                     </span>
                     <span>{skill.name}</span>
@@ -283,8 +343,39 @@ export const BentoGridItem = ({
             </div>
           )} */}
 
+          {id === 4 && (
+            <>
+              <form
+                method="get"
+                action="/walassi_silva_cv_en.pdf"
+                className="text-center"
+              >
+                <MagicButton
+                  title="English"
+                  icon={<IoCopyOutline />}
+                  position="left"
+                  otherClasses="!bg-[#161a31]"
+                  handleClick={handleCopy}
+                />
+              </form>
+              <form
+                method="get"
+                action="/walassi_silva_cv.pdf"
+                className="text-center"
+              >
+                <MagicButton
+                  title="Português"
+                  icon={<IoCopyOutline />}
+                  position="left"
+                  otherClasses="!bg-[#161a31]"
+                  handleClick={handleCopy}
+                />
+              </form>
+            </>
+          )}
+
           {id === 6 && (
-            <div className="mt-5 relative ">
+            <div className="mt-5 relative mx-auto">
               <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
@@ -293,13 +384,9 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <MagicButton
-                title={copied ? "Email Copied!" : "Copy my email"}
-                icon={<IoCopyOutline />}
-                position="left"
-                otherClasses="!bg-[#161a31]"
-                handleClick={handleCopy}
-              />
+              <SocialMedias />
+
+              {/*  */}
             </div>
           )}
         </div>
