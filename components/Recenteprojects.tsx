@@ -14,7 +14,7 @@ export default function RecentProjects() {
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32.5rem] flex flex-col items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={"visit"} href={link}>
               <div className=" flex relative items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
@@ -27,42 +27,41 @@ export default function RecentProjects() {
 
                 <img src={img} alt={title} className="z-10 absolute bottom-0" />
               </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {title}
-              </h1>
-
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
-                {des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {iconLists.map((icon, index) => (
-                    <div
-                      key={icon}
-                      className="border border-white/[0.2] rounded-full bg-black flex justify-center items-center lg:size-10 size-8"
-                      style={{ transform: `translateX(-${5 * index * 2}px)` }}
-                    >
-                      <img src={icon} alt={icon} className="p-2 " />
-                    </div>
-                  ))}
-                </div>
-
-                <a
-                  target="_blank"
-                  href={link}
-                  className="flex justify-center items-center"
-                >
-                  <div className="border flex items-center px-2 md:px-4 py-2 rounded-md">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                      Click here
-                    </p>
-                    <FaLocationArrow className="ms-3" color="#cbacf9" />
-                  </div>
-                </a>
-              </div>
             </PinContainer>
+            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              {title}
+            </h1>
+
+            <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+              {des}
+            </p>
+
+            <div className="flex items-center justify-between mt-7 mb-3">
+              <div className="flex items-center">
+                {iconLists.map((icon, index) => (
+                  <div
+                    key={icon}
+                    className="border border-white/[0.2] rounded-full bg-black flex justify-center items-center lg:size-10 size-8"
+                    style={{ transform: `translateX(-${5 * index * 2}px)` }}
+                  >
+                    <img src={icon} alt={icon} className="p-2 " />
+                  </div>
+                ))}
+              </div>
+
+              <a
+                target="_blank"
+                href={link}
+                className="flex justify-center items-center"
+              >
+                <div className="border flex items-center px-2 md:px-4 py-2 rounded-md">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    Click here
+                  </p>
+                  <FaLocationArrow className="ms-3" color="#cbacf9" />
+                </div>
+              </a>
+            </div>
           </div>
         ))}
       </div>
