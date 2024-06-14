@@ -196,7 +196,7 @@ export const BentoGridItem = ({
         )}
         <div className="">
           {id === 1 && (
-            <div className="p-10 flex flex-col justify-center items-center gap-4 ">
+            <div className="relative p-10 flex flex-col justify-center items-center gap-4 ">
               <h1 className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ">
                 Who is <span className="text-purple">Walassi</span>?
               </h1>
@@ -242,6 +242,9 @@ export const BentoGridItem = ({
                   stakeholders.
                 </p>
               </div>
+                <img src="./exp1.svg" alt="" className="absolute -z-[1] -bottom-32 lg:top-0 right-0 w-full opacity-20"/>
+              <div >
+              </div>
             </div>
           )}
         </div>
@@ -285,7 +288,7 @@ export const BentoGridItem = ({
             // <div className="flex lg:mt-10 gap-1 lg:gap-5 w-fit -right-3 lg:-right-2">
             // <div className="flex flex-wrap gap-5  lg:gap-8">
             <div className="">
-              <div className="grid grid-cols-3 md:grid-cols-4 gap-y-5 mt-10 p-10 ">
+              <div className="grid grid-cols-3 md:grid-cols-4 gap-y-3 mt-4 p-4">
                 {frontendSkills.map((skill) => (
                   <div
                     key={skill.id}
