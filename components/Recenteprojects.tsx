@@ -49,12 +49,18 @@ export default function RecentProjects() {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#cbacf9" />
-                </div>
+                <a
+                  target="_blank"
+                  href={link}
+                  className="flex justify-center items-center"
+                >
+                  <div className="border flex items-center px-4 py-1 rounded-md">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      Check Live Site
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#cbacf9" />
+                  </div>
+                </a>
               </div>
             </PinContainer>
           </div>
