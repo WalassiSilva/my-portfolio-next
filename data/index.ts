@@ -76,7 +76,14 @@ export const projects = [
     title: "Money Manger",
     des: "A fullstack project built to showcase, my skills and use as personal money manager.",
     img: "/mm.gif",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/postgresql.svg", "/prisma.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "nodejs.svg",
+      "/postgresql.svg",
+      "/prisma.svg",
+    ],
     link: "https://github.com/WalassiSilva/money-manager",
   },
   {
@@ -92,7 +99,7 @@ export const projects = [
     title: "Node API",
     des: "A node api it's an application for managing participants in in-person events using latest tech and documentation on Swagger.",
     img: "/passin.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "swagger.svg"],
+    iconLists: ["/nodejs.svg","/ts.svg","/fastify.svg", "/prisma.svg", "swagger.svg"],
     link: "https://github.com/WalassiSilva/node-api-NLW",
   },
   {
@@ -108,7 +115,7 @@ export const projects = [
     title: "Dev Burger",
     des: "Dev burger is an online menu with a beautiful responsive design that integrates orders with WhatsApp.",
     img: "/p4.gif",
-    iconLists: ["/html.svg","/tail.svg", "/js.svg"],
+    iconLists: ["/html.svg", "/tail.svg", "/js.svg"],
     link: "https://devburger-cardapio.vercel.app/",
   },
   {

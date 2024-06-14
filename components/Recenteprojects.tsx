@@ -44,7 +44,7 @@ export default function RecentProjects() {
                       className="border border-white/[0.2] rounded-full bg-black flex justify-center items-center lg:size-10 size-8"
                       style={{ transform: `translateX(-${5 * index * 2}px)` }}
                     >
-                      <img src={icon} alt={icon} className="p-2" />
+                      <img src={icon} alt={icon} className="p-2 " />
                     </div>
                   ))}
                 </div>
@@ -54,9 +54,9 @@ export default function RecentProjects() {
                   href={link}
                   className="flex justify-center items-center"
                 >
-                  <div className="border flex items-center px-4 py-1 rounded-md">
+                  <div className="border flex items-center px-2 md:px-4 py-2 rounded-md">
                     <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                      Check Live Site
+                      Click here
                     </p>
                     <FaLocationArrow className="ms-3" color="#cbacf9" />
                   </div>
