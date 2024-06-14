@@ -5,13 +5,13 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
-
 export const gridItems = [
   {
     id: 1,
     title: "",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] h-full",
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] h-full",
     imgClassName: "w-full h-full",
     titleClassName: "justify-start ",
     // img: "/grid.svg",
@@ -73,43 +73,51 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Portfolio",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "Money Manger",
+    des: "A fullstack project built to showcase, my skills and use as personal money manager.",
+    img: "/mm.gif",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/postgresql.svg", "/prisma.svg"],
+    link: "https://github.com/WalassiSilva/money-manager",
   },
   {
     id: 2,
     title: "Template site",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    des: "A website template designed to cater to clients from various industries, thanks to its enchanting design with animations and responsiveness.",
     img: "/p2.gif",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
     link: "https://template-paisagens.vercel.app/",
   },
   {
     id: 3,
-    title: "Relap - Landing Page",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.gif",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link:"https://relap-git-new-header-walassisilvas-projects.vercel.app/",
+    title: "Node API",
+    des: "A node api it's an application for managing participants in in-person events using latest tech and documentation on Swagger.",
+    img: "/passin.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "swagger.svg"],
+    link: "https://github.com/WalassiSilva/node-api-NLW",
   },
   {
     id: 4,
-    title: "Menu",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.gif",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://devburger-cardapio.vercel.app/",
+    title: "Relap - Landing Page",
+    des: "A responsive landing page with simple and greate user experience.",
+    img: "/p3.gif",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://relap-ten.vercel.app/",
   },
   {
     id: 5,
-    title: "Node API",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    title: "Dev Burger",
+    des: "Dev burger is an online menu with a beautiful responsive design that integrates orders with WhatsApp.",
+    img: "/p4.gif",
+    iconLists: ["/html.svg","/tail.svg", "/js.svg"],
+    link: "https://devburger-cardapio.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Dashboard",
+    des: "Home page of a Dashboard created with dynamic data, great charts and beautiful design",
+    img: "/dashboard.gif",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://dashboard-nine-dun.vercel.app/",
   },
 ];
 
@@ -214,22 +222,21 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/walassisilva"
+    link: "https://github.com/walassisilva",
   },
   {
     id: 2,
     img: "/link.svg",
-    link:"https://linkedin.com/in/walassi-silva"
+    link: "https://linkedin.com/in/walassi-silva",
   },
   {
     id: 3,
     img: "/email-alt.svg",
-    link:"mailto:walassi.b@gmail.com"
+    link: "mailto:walassi.b@gmail.com",
   },
   {
-    id:4,
+    id: 4,
     img: "/whatsapp.svg",
-    link:"https://wa.me/+5531986482092", 
-
-  }
+    link: "https://wa.me/+5531986482092",
+  },
 ];
