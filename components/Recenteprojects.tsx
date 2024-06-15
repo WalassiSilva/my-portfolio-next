@@ -10,7 +10,7 @@ export default function RecentProjects() {
         <span className="text-purple"> recent projects</span>
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
@@ -54,11 +54,11 @@ export default function RecentProjects() {
                 href={link}
                 className="flex justify-center items-center"
               >
-                <div className="border flex items-center px-2 md:px-4 py-2 rounded-md">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                <div className="border flex items-center px-2 md:px-4 py-2 rounded-md text-purple hover:text-white">
+                  <p className="flex lg:text-xl md:text-xs text-sm">
                     Click here
                   </p>
-                  <FaLocationArrow className="ms-3" color="#cbacf9" />
+                  <FaLocationArrow className="ms-3 "  />
                 </div>
               </a>
             </div>

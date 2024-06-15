@@ -31,11 +31,11 @@ export default function Hero() {
           </p>
 
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] mb-20 md:text-5xl lg:text-6xl"
             words="Hi, I&apos;m Walassi Silva. A Fullstack Web Developer"
           />
 
-          <a href="#about">
+          <a href="#about" >
             <MagicButton
             title="Show my work" position="right" icon={<FaLocationArrow />} />
           </a>
