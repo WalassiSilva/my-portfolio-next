@@ -37,7 +37,7 @@ export default function Hero() {
 
           <a href="#about" >
             <MagicButton
-            title="Show my work" position="right" icon={<FaLocationArrow />} />
+            title="Let&apos;t Start" position="right" icon={<FaLocationArrow />} />
           </a>
         </div>
       </div>
