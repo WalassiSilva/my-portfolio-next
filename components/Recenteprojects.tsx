@@ -14,25 +14,24 @@ export default function RecentProjects() {
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32.5rem] flex flex-col items-center justify-center sm:w-[570px] w-[80vw]"
+            className=" flex flex-col items-center justify-center sm:w-[570px] w-[80vw] "
           >
             <PinContainer title={"visit"} href={link}>
-              <div className=" flex relative items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+              <div className=" flex relative items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden  ">
                 <div
                   className="relative w-full h-full overflow-hidden rounded-3xl "
                   style={{ background: "#13162d" }}
                 >
                   <img src="./bg.png" alt="bg-img" />
                 </div>
-
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img src={img} alt={title} className="z-10 absolute" />
               </div>
             </PinContainer>
-            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+
+            <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 md:mt-20">
               {title}
             </h1>
-
-            <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+            <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 ">
               {des}
             </p>
 
@@ -58,7 +57,7 @@ export default function RecentProjects() {
                   <p className="flex lg:text-xl md:text-xs text-sm">
                     Click here
                   </p>
-                  <FaLocationArrow className="ms-3 "  />
+                  <FaLocationArrow className="ms-3 " />
                 </div>
               </a>
             </div>
