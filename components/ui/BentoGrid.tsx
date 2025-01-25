@@ -202,49 +202,65 @@ export const BentoGridItem = ({
               </h1>
               <div className="flex flex-col gap-10 items-center">
                 <p>
-                  My name is <span className="text-purple"> Walassi</span>. I am
-                  an extremely <span className="text-purple">dedicated</span>{" "}
-                  and
-                  <span className="text-purple"> committed</span> individual
-                  when it comes to work.
-                </p>
-                <p>
-                  I have been enhancing my knowledge in the area of front-end
-                  web development, utilizing technologies such as{" "}
-                  <span className="text-purple">
-                    HTML, CSS, JavaScript, TypeScript, React, Tailwind, Styled
-                    Components, SASS, Git/GitHub, Node.js, SQL, PostgreSQL,
-                    Prisma ORM, Jest, and Express.
-                  </span>
-                </p>
-                <p>
-                  I am currently transitioning from a different field, having
-                  spent <span className="text-purple"> five years</span> working
-                  in an tapestry business. During this time, I gained a wealth
-                  of <span className="text-purple">real-world knowledge</span>{" "}
-                  that is not taught in classrooms, such as{" "}
-                  <span className="text-purple">reacting quickly </span>
-                  to unforeseen events,{" "}
-                  <span className="text-purple">
-                    handling clients during stressful situations
-                  </span>
-                  , and reallocating team members and priorities when necessary.
-                </p>
-                <p>
-                  My clear objective is to become a{" "}
-                  <span className="text-purple">high quality developer</span>. I
-                  aspire to be a professional capable of{" "}
-                  <span className="text-purple">
-                    creating and contributing to projects
-                  </span>{" "}
-                  that bring about changes in people&apos;s lives, projects that
-                  facilitate, improve, and help users, clients, and all other
-                  stakeholders.
+                  More than 2 year of experience in Web Development, with strong
+                  skills in developing Fullstack applications and impactful,
+                  responsive systems, with knowledge in the{" "}
+                  <span className="text-purple">following activities:</span>
+                  <ul className="space-y-2 mt-2">
+                    <li>
+                      🔹 Development of applications and interfaces with Next.js
+                      and React.js;
+                    </li>
+                    <li>🔹 Creation of REST APIs with Node.js and Express;</li>
+                    <li>
+                      🔹 State management with Zustand and Tanstack-query;
+                    </li>
+                    <li>
+                      🔹 Database management with PostgreSQL and Prisma ORM;
+                    </li>
+                    <li>
+                      🔹 Styling and responsiveness with TailwindCSS and Styled
+                      Components;
+                    </li>
+                    <li>
+                      🔹 Use of agile methodologies and project management tools
+                      like ClickUp.
+                    </li>
+                  </ul>
+                  <h4 className="mt-2 font-bold text-purple">Key Results:</h4>
+                  <ul className="space-y-2 mt-2">
+                    <li>
+                      🔹 Built a complete financial application in 60 days
+                      saving up to 60% on premium subscriptions;
+                    </li>
+                    <li>
+                      🔹 Developed an API for event management, with capacity of
+                      register over 1000 participants and badge generation;
+                    </li>
+                    <li>
+                      🔹 Reduced complaints and increased operational efficiency
+                      by 20% by managing teams and reorganizing workflows;
+                    </li>
+                    <li>
+                      🔹 Automated calculations for over 50 monthly
+                      spreadsheets;
+                    </li>
+                    <li>🔹 Managed over 3,000 clients and 50 partners;</li>
+                    <li>
+                      🔹 Implemented improvements in administrative workflows,
+                      reducing report creation time by 200%.
+                    </li>
+                    <li></li>
+                    <li></li>
+                  </ul>
                 </p>
               </div>
-                <img src="./exp1.svg" alt="" className="absolute -z-[1] -bottom-32 lg:top-0 right-0 w-full opacity-20"/>
-              <div >
-              </div>
+              <img
+                src="./exp1.svg"
+                alt="backgound"
+                className="absolute -z-[1] -bottom-32 lg:top-0 right-0 w-full opacity-20"
+              />
+              <div></div>
             </div>
           )}
         </div>
