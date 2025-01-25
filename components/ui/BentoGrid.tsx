@@ -24,9 +24,12 @@ import {
   SiReactrouter,
   SiStyledcomponents,
   SiTailwindcss,
+  SiZod,
 } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import SocialMedias from "../SocialMedias";
+import { FaStripeS } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -85,10 +88,22 @@ export const BentoGridItem = ({
   };
   const frontendSkills = [
     {
+      id: "Next",
+      name: "Next",
+      icon: <RiNextjsFill/>,
+      color: "text-[#fff]",
+    },
+    {
       id: "react",
       name: "React",
       icon: <DiReact />,
       color: "text-[#61dafb]",
+    },
+    {
+      id: "zod",
+      name: "Zod",
+      icon: <SiZod />,
+      color: "text-[#3068b7]",
     },
     {
       id: "react-router",
@@ -158,6 +173,12 @@ export const BentoGridItem = ({
       icon: <DiNodejsSmall />,
       color: "text-[#83cd29]",
     },
+    {
+      id: "stripe",
+      name: "Stripe",
+      icon: <FaStripeS />,
+      color: "text-[#7a73ff]", 
+    },
   ];
 
   return (
@@ -201,11 +222,13 @@ export const BentoGridItem = ({
                 Who is <span className="text-purple">Walassi</span>?
               </h1>
               <div className="flex flex-col gap-10 items-center">
-                <p>
-                  More than 2 year of experience in Web Development, with strong
-                  skills in developing Fullstack applications and impactful,
-                  responsive systems, with knowledge in the{" "}
-                  <span className="text-purple">following activities:</span>
+                <div>
+                  <p>
+                   <span className="text-purple"> More than 2 year of experience in Web Development</span>, with
+                    strong skills in developing Fullstack applications and
+                    impactful, responsive systems, with knowledge in the{" "}
+                    <span className="text-purple">following activities:</span>
+                  </p>
                   <ul className="space-y-2 mt-2">
                     <li>
                       🔹 Development of applications and interfaces with Next.js
@@ -231,29 +254,29 @@ export const BentoGridItem = ({
                   <ul className="space-y-2 mt-2">
                     <li>
                       🔹 Built a complete financial application in 60 days
-                      saving up to 60% on premium subscriptions;
+                      <span className="text-purple">saving up to 60% on premium subscriptions</span>;
                     </li>
                     <li>
-                      🔹 Developed an API for event management, with capacity of
+                      🔹 <span className="text-purple">Developed an API for event management</span>, with capacity of
                       register over 1000 participants and badge generation;
                     </li>
                     <li>
-                      🔹 Reduced complaints and increased operational efficiency
-                      by 20% by managing teams and reorganizing workflows;
+                      🔹 Reduced complaints and <span className="text-purple">increased operational efficiency
+                      by 20%</span> by managing teams and reorganizing workflows;
                     </li>
                     <li>
-                      🔹 Automated calculations for over 50 monthly
-                      spreadsheets;
+                      🔹 Automated calculations for <span className="text-purple">over 50 monthly
+                      spreadsheets</span>;
                     </li>
                     <li>🔹 Managed over 3,000 clients and 50 partners;</li>
                     <li>
                       🔹 Implemented improvements in administrative workflows,
-                      reducing report creation time by 200%.
+                      <span className="text-purple"> reducing report creation time by 200%.</span> 
                     </li>
                     <li></li>
                     <li></li>
                   </ul>
-                </p>
+                </div>
               </div>
               <img
                 src="./exp1.svg"
